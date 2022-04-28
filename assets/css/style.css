@@ -8,56 +8,38 @@ font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
 }
-.gridcontenedor{
-    display:grid;
-    grid-template-columns: 20% 50% auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer"
-    ;    
-}
+
+
 header{
-    position:fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    background: rgba(217,216,216,0.65);
-    grid-area: header;
-    
+    top: 0; 
+    background: rgba(156, 153, 153, 0.65);  
 }
 
-.navegador {
-    width: 100%;
+.navegador{
+    color: black;
     list-style: none;
-    padding: 0;
+    padding: 1;
     margin: auto;
     font-family: 'BIZ UDPMincho', serif;
-    text-align: center;  
+    text-align: center;
 }
 .navegador li a {
     color: rgb(7, 6, 5);
     text-decoration: none;
     padding: 15px;
-    display: block;
     border: inset 2px;    
 }
-.navegador li {
-    display: inline-block;      
-}
-.navegador li a:hover { /*animacion al pasar mouse en nav*/
+nav li a:hover { /*animacion al pasar mouse en nav*/
     background-color: dimgray;
 }
 
-.main{
+.mains{
 
     background-image: url(../img/cerveza-negra-stout-y-porter___ert_ia4f9_1256x620__1.jpg);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     padding: 52px 0 2rem 0; /*modificar para adaptacion*/
-    grid-area: main;
-          
+    
 }
 .main_section{
     padding: 2rem;
@@ -81,7 +63,11 @@ h1{
 }
 /*fin animacion*/
 h1,h3{
-    font-family: 'BIZ UDPMincho', serif;
+    font-family: 'BIZ UDPMincho', serif;   
+}
+h3{
+    font-family: 'BIZ UDPMincho', serif;  
+    color: bisque; 
 }
 .color img{
     padding-left: 10px;
@@ -144,7 +130,7 @@ section h1{
 /* fin pagina nuestrascervezas */
 
 /* pagina contacto */
-.main h1{
+.mains h1{
     text-align: center;
     padding-top: 10px;
 }
@@ -193,7 +179,7 @@ footer{
     text-align: center;
     color: rgb(2, 5, 6);
     font-family: 'BIZ UDPMincho', serif;
-    grid-area: footer;   
+     
 }
 footer div{
         text-align: left;
