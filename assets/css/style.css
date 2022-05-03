@@ -8,6 +8,7 @@ font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
 }
+/*trabajo con grid*/     
 .gridcontenedor{
     display:grid;
     grid-template-columns: 20% 50% auto;
@@ -52,15 +53,18 @@ header{
 
 .main{
 
-    background-image: url(../img/cerveza-negra-stout-y-porter___ert_ia4f9_1256x620__1.jpg);
+    background-image: url(../img/fabio-alves-_fLgxjACz5k-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 52px 0 2rem 0; /*modificar para adaptacion*/
-    grid-area: main;
-          
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    grid-area: main;          
 }
 .main_section{
-    padding: 2rem;
+    padding: 4rem;
+    color: rgba(240, 248, 255, 0.795);
 }
 p,button{
     font-family: 'Playfair Display', serif;
@@ -69,7 +73,8 @@ p,button{
 h1{
     animation-duration: 1s;
     animation-name: efecto;
-    animation-iteration-count: infinite; 
+    animation-iteration-count: infinite;
+    color: rgba(255, 255, 255, 0.811); 
 }
 @keyframes efecto {
     0%{
@@ -189,30 +194,50 @@ section h1{
 /* inicio footer*/
 
 footer{
-    background-color: rgba(140, 140, 133, 0.554);
-    text-align: center;
-    color: rgb(2, 5, 6);
+    width: 100%;
+    padding: 50px 0px;
+    background-color: rgba(251, 251, 251, 0.504);
     font-family: 'BIZ UDPMincho', serif;
     grid-area: footer;   
 }
-footer div{
-        text-align: left;
-        padding-top: 5px;
-        padding: 10px ;       
+.contenedorfooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
 }
-footer h3{
-    text-align: right;
-    padding-right: 20px;  
+.boxfooter{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
 }
-footer h5{
-    padding-bottom: 5px;
+.boxfooter a{
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;    
 }
+.boxfooter h2{
+    margin-bottom: 20px;
+}
+.boxfooter_redes{
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        align-items: center;
+}
+.boxfooter_redes a{
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;    
+}
+/*RESPONSIVE*/
 
 /*responsive index*/
-@media (max-width: 420px){
+@media (max-width: 480px){
     .gridcontenedor{
         grid-template-columns:1fr 1fr ;
-        grid-template-rows:auto auto 100px;
+        grid-template-rows:auto auto auto;
         grid-template-areas: 
         "header header"
         "main main"
@@ -230,6 +255,7 @@ footer h5{
     .logo{
         display: none;
         }
+    
     
     /*responsive nuestrascervezas*/
     
@@ -253,6 +279,31 @@ footer h5{
     /*cursos*/
     .cursos iframe{
         width: 300px;
+    }
+
+    /*responsive footer*/
+    footer{
+        padding-top: 0;
+    }
+    .contenedorfooter{
+        justify-content: center;
+    }
+    .boxfooter_redes{
+        flex-direction: row;    
+    }
+    .boxfooter_redes a{
+        margin: 20px;
+    }
+    .boxfooter_redes a i{
+        font-size: 40px;
+    }
+
+    .boxfooter a {
+        display: none;
+        
+    }
+    .boxfooter_redes h2{
+        display: none;
     }
 
 }
