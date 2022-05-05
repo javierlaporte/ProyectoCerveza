@@ -1,0 +1,22 @@
+.gridcontenedor{
+    display:grid;
+    grid-template-columns: 20% 50% auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "main main main"
+    "footer footer footer"
+    ;    
+    header{
+        
+        grid-area: cabeza;
+        
+    }
+    .main{
+
+        grid-area: main;          
+    }
+    footer{
+        grid-area: footer;
+    }
+}

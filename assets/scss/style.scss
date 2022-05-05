@@ -1,0 +1,76 @@
+@import "_variables";
+@import "_grid";
+
+body{
+    background-color: rgba(38, 27, 23, 0);
+    top: 0;
+    margin: 0;
+}
+header{
+    background-color: $colorprimario;
+    display:flex;
+    top: 0;
+    border-radius: 3px;
+}
+.navegador {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    font-family: 'BIZ UDPMincho', serif;
+    text-align: center;
+    li {
+        display: inline-block;
+    }
+    a{
+        color: $colorletras;
+    text-decoration: none;
+    padding: 15px;
+    display: block; 
+             
+     }
+         }
+.main{
+    background-image: url(../img/fabio-alves-_fLgxjACz5k-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 52px 0 2rem 0;
+    color: $colorletras;
+                h1{
+                    text-align: center;
+                   
+                }
+}
+footer{
+background-color: $colorprimario;
+}
+.contenedorfooter{
+    display: flex;
+    justify-content: space-between;
+
+        .boxfooter{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: $colorletras;
+        }
+        h2{
+            margin-bottom: 20px;
+        }
+}
+.boxfooter_redes{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    a{
+        text-decoration: none;
+        margin-top: 20px;
+        }
+}
