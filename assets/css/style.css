@@ -53,7 +53,7 @@ header{
 
 .main{
 
-    background-image: url(../img/fabio-alves-_fLgxjACz5k-unsplash.jpg);
+    background-image: url(../img/fabio-alves-_fLgxjACz5k-unsplash.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 52px 0 2rem 0; /*modificar para adaptacion*/
@@ -64,7 +64,7 @@ header{
 }
 .main_section{
     padding: 4rem;
-    color: rgba(240, 248, 255, 0.795);
+    color: rgb(251, 251, 251);
 }
 p,button{
     font-family: 'Playfair Display', serif;
@@ -74,7 +74,7 @@ h1{
     animation-duration: 1s;
     animation-name: efecto;
     animation-iteration-count: infinite;
-    color: rgba(255, 255, 255, 0.811); 
+    color: rgb(255, 255, 255); 
 }
 @keyframes efecto {
     0%{
@@ -95,8 +95,28 @@ h1,h3{
 .logo{
     width: 80px;
     height: 48px;
-}
 
+}
+/*nueva tarjeta para compras*/
+.tarjetacompra{
+    background-color: rgba(16, 4, 4, 0.93);
+    width: 200px;
+}
+.cajacompra{
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+}
+.tarjetacompra{
+padding-top: 40px;
+padding-left: 20px;
+padding-bottom: 5px;
+border-radius: 5px;
+}
+.cajacompra .tarjetacompra a{
+    text-decoration: none;
+    color: rgb(240, 239, 239);
+    }
 
 /* PAGINA NUESTRASCERVEZAS */
 
@@ -154,8 +174,7 @@ section h1{
     padding-top: 10px;
 }
 .contacto{
-    margin: 2rem 0; /*modifique tenia auto*/
-    max-width: 1200px;    
+    margin: 2rem 0; /*modifique tenia auto*/    
     display:flex;
     justify-content: center;
     flex-direction:row;  
