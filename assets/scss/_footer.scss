@@ -1,0 +1,31 @@
+footer{
+    background-color: $colorprimario;
+    grid-area: footer;
+    }
+    .contenedorfooter{
+        display: flex;
+        justify-content: space-between;
+    
+            .boxfooter{
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+            }
+            a{
+                text-decoration: none;
+                color: $colorletras;
+            }
+            h2{
+                margin-bottom: 20px;
+            }
+    }
+            .boxfooter_redes{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            align-items: center;
+             a{
+            text-decoration: none;
+            margin-top: 20px;
+            }
+    }

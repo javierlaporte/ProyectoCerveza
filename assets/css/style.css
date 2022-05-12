@@ -9,22 +9,22 @@
 }
 
 .gridcontenedor header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-rows: 1;
+  -ms-grid-columns: 1;
   -ms-grid-column-span: 3;
   grid-area: cabeza;
 }
 
 .gridcontenedor .main {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-rows: 2;
+  -ms-grid-columns: 1;
   -ms-grid-column-span: 3;
   grid-area: main;
 }
 
 .gridcontenedor footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-rows: 3;
+  -ms-grid-columns: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
 }

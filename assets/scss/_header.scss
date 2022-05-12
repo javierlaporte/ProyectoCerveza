@@ -1,0 +1,28 @@
+header{
+    background-color: $colorprimario;
+    display:flex;
+    top: 0;
+    border-radius: 3px;
+    grid-area: cabeza;
+    .navegador {
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: auto;
+        font-family: 'BIZ UDPMincho', serif;
+        text-align: center;
+        li {
+            display: inline-block;
+        }
+        a{
+        color: $colorletras;
+        text-decoration: none;
+        padding: 15px;
+        display: block; 
+                 
+         }
+             } 
+             
+
+
+}

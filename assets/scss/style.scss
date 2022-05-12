@@ -1,39 +1,27 @@
-@import "_variables";
+@import "_footer";
+@import "_generales";
 @import "_grid";
+@import "_header";
+@import "_media";
+@import "_nuestrascervezas";
+@import "_variables";
 
-body{
-    background-color: rgba(38, 27, 23, 0);
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Playfair+Display&display=swap');
+
+
+body{   
     top: 0;
     margin: 0;
 }
-header{
-    background-color: $colorprimario;
-    display:flex;
-    top: 0;
-    border-radius: 3px;
-}
-.navegador {
-    width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: auto;
-    font-family: 'BIZ UDPMincho', serif;
-    text-align: center;
-    li {
-        display: inline-block;
-    }
-    a{
-        color: $colorletras;
-    text-decoration: none;
-    padding: 15px;
-    display: block; 
-             
-     }
-         }
 .main{
     background-image: url(../img/fabio-alves-_fLgxjACz5k-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    grid-area: main;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,35 +30,38 @@ header{
                 h1{
                     text-align: center;
                    
+                }.main_section{
+                    padding: 4rem;
+                    color: rgb(251, 251, 251);
                 }
-}
-footer{
-background-color: $colorprimario;
-}
-.contenedorfooter{
-    display: flex;
-    justify-content: space-between;
-
-        .boxfooter{
-            display: flex;
-            flex-direction: column;
-            padding: 30px;
-        }
-        a{
-            text-decoration: none;
-            color: $colorletras;
-        }
-        h2{
-            margin-bottom: 20px;
-        }
-}
-.boxfooter_redes{
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    align-items: center;
-    a{
-        text-decoration: none;
-        margin-top: 20px;
-        }
+                p,button{
+                    font-family: $fuentetitulos
+                }
+                /*animacion al titulo*/
+                h1{
+                    animation-duration: 1s;
+                    animation-name: efecto;
+                    animation-iteration-count: infinite;
+                    color: $colorletras; 
+                }
+                @keyframes efecto {
+                    0%{
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+                /*fin animacion*/
+                h1,h3{
+                    font-family: $fuentetitulos;
+                }
+                .color img{
+                    padding-left: 10px;
+                    padding-top: 5px;
+                }
+                .logo{
+                    width: 80px;
+                    height: 48px;
+                }
 }
