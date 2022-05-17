@@ -13,11 +13,17 @@
          }
     header{
         position: static;
+    .navegador{
+        li{
+        display: block;    
+        }
+        .logo{
+            display: none;
+            }       
+        
+    }    
          }
-    .navegador li{
-        display: block;
-             }
-    .logo{
+    .logo{ /*aplico en general porque esta en header y footer*/
         display: none;
         }    
     
@@ -49,25 +55,27 @@
     footer{
         padding-top: 0;
 
-        .contenedorfooter{
-            justify-content: center;
+    .contenedorfooter{
+        justify-content: space-evenly;
         }
-        .boxfooter_redes{
-            flex-direction: row;
-            a{
-                margin: 20px;
+    .boxfooter_redes{
+        flex-direction: row;
+        a{
+            margin: 20px;
             }  
-            i{
-                font-size: 40px;
+        i{
+            font-size: 40px;
             }
-            h2{
-                display: none;
+        h2{
+            display: none;
             }  
         }    
-        .boxfooter a {
+    .boxfooter{
+        a {
             display: none;
             
         }
+    } 
        
         }
     

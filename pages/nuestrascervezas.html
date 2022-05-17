@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head >
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestras Cervezas</title>
+    <meta name="keywords" content="cerveza,cerveceria,artesanal">
+    <meta name="description" content="Sitio web sobre cerveceria artesanal comidas y algo mas ">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://kit.fontawesome.com/36b1a522dc.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="gridcontenedor">
 
     <header>
         <div class="color">
-            <img class="logo" src="../assets/img/logo.jpg"  alt="logotipo">
+            <img class="logo" src="../assets/img/logo.jpg" alt="logotipo">
         </div>
         <nav class="navegador scroll">
             <ul>
@@ -27,66 +30,99 @@
     </header>
 
     <main class="main">
-    <section>            
-        <h1>Nuestras Cervezas</h1>
-    </section>
-         
-    <div class="contenedor">
-        <div class="tarjeta">
-        <h3 class="tarjeta_titulo">Golden</h3>
-        <img src="../assets/img/cerveza-golden.png"  alt="" >
-        <p class="tarjeta_descripcion">Lorem ipsum dolor sit amet.</p>
-        <button class="tarjeta_boton">Leer Mas</button>
-        </div>
-    
-        <div class="tarjeta">
-         <h3 class="tarjeta_titulo">Stout</h3>
-         <img src="../assets/img/cerveza-golden.png"  alt="" >
-         <p class="tarjeta_descripcion">Lorem ipsum dolor sit amet.</p>
-         <button class="tarjeta_boton">Leer Mas</button>
-        </div>
-   
-    
-        <div class="tarjeta">
-        <h3 class="tarjeta_titulo">Honey</h3>
-        <img src="../assets/img/cerveza-golden.png"  alt="" >
-        <p class="tarjeta_descripcion">Lorem ipsum dolor sit amet.</p>
-        <button class="tarjeta_boton">Leer Mas</button>
+        <section class="main_section">
+            <h1>Nuestras Cervezas</h1>
+        </section>
+
+        <div class="contenedor">
+            <div class="tarjeta">
+                <h3 class="tarjeta_titulo">Golden</h3>
+                <img src="../assets/img/cerveza-golden.png" alt="cerveza Golden">
+                <p class="tarjeta_descripcion">
+                    Las cervezas belgas del tipo Golden Ale se caracterizan por tener un color amarillo pálido
+                    cristalino que las diferencia del resto de cervezas ale. Esto se consigue con un largo madurado a
+                    temperaturas bajas, lo que le da una limpieza excepcional y un sabor refinado, de 4 a 5 % de alcohol
+                    por volumen</p>
+                <button class="tarjeta_boton">Leer Mas</button>
+            </div>
+
+            <div class="tarjeta">
+                <h3 class="tarjeta_titulo">Stout</h3>
+                <img src="../assets/img/cerveza-golden.png" alt="cerveza Stout">
+                <p class="tarjeta_descripcion">Stout es el nombre de un estilo de cerveza, tipo ale, muy oscura,
+                    originario de las islas británicas. Era el nombre utilizado para la cerveza más fuerte (stout), de 7
+                    % a 8 % de alcohol por volumen</p>
+                <button class="tarjeta_boton">Leer Mas</button>
+            </div>
+
+
+            <div class="tarjeta">
+                <h3 class="tarjeta_titulo">Honey</h3>
+                <img src="../assets/img/cerveza-golden.png" alt="cerveza Honey">
+                <p class="tarjeta_descripcion">Las cervezas con miel también conocidas como Honey Beer, son cervezas a
+                    las que se le añade miel en el último tramo del hervido. Se pueden elaborar de muchas formas, con
+                    levaduras de fermentación alta o baja, con maltas tostadas o pálidas, de 7 a 8 % de alcohol por
+                    volumen.</p>
+                <button class="tarjeta_boton">Leer Mas</button>
+            </div>
+
+            <div class="tarjeta">
+                <h3 class="tarjeta_titulo">Red</h3>
+                <img src="../assets/img/cerveza-golden.png" alt="cerveza Red">
+                <p class="tarjeta_descripcion">La cerveza roja variedad Red Ale, proveniente de Irlanda, en la que predomina la malta caramelo y tostada, que
+                    refuerza su sabor dulce.Las cervezas normalmente son bajas en alcohol (3,5 % es lo típico)</p>
+                <button class="tarjeta_boton">Leer Mas</button>
+            </div>
+
         </div>
 
-        <div class="tarjeta">
-        <h3 class="tarjeta_titulo">Red</h3>
-        <img src="../assets/img/cerveza-golden.png"  alt="" >
-        <p class="tarjeta_descripcion">Lorem ipsum dolor sit amet.</p>
-        <button class="tarjeta_boton">Leer Mas</button>
-        </div> 
-        
-    </div>     
+        <div class="formulario">
+            <form>
 
-    <div class="formulario">
-        <form>
+                <label for="Cervezas">
+                    <h3>Elegí tu cerveza</h3< >
+                        <select name="Cervezas" id="">
+                            <option value="Golden">Golden</option>
+                            <option value="Red">Red</option>
+                            <option value="Honey">Honey</option>
+                            <option value="Stout">Stout</option>
+                        </select>
+                        <input type="submit" value="Comprar">
+            </form>
+        </div>
 
-        <label for="Cervezas"><h3></h3>Elegí tu cerveza</h3</label>
-        <select name="Cervezas" id="">                
-            <option value="Golden">Golden</option>
-            <option value="Red" >Red</option>
-            <option value="Honey">Honey</option>
-            <option value="Stout">Stout</option>
-        </select>
-            <input type="submit" value="Comprar">
-        </form>
-    </div>
-       
     </main>
-        
-    <footer >
-        <div>
-            <img class="logo" src="../assets/img/logo.jpg"  alt="logotipo">
-        </div>            
-         <h3>Contacto</h3>
-         <h5>Todos los derechos reservados</h5>   
-    </footer>
 
+    <footer>
+
+        <div class="contenedorfooter">
+            <div class="boxfooter">
+                <div class="logo">
+                    <img src="../assets/img/logo.jpg" alt="logotipo">
+                </div>
+
+            </div>
+            <div class="boxfooter">
+                <a href="./index.html">Inicio</a>
+                <a href="./pages/sobrenosotros.html">Sobre nosotros</a>
+                <a href="./pages/nuestrascervezas.html">Nuestras Cervezas</a>
+                <a href="./pages/cursos.html">Cursos</a>
+                <a href="./pages/contacto.html">Contacto</a>
+
+            </div>
+
+            <div class="boxfooter_redes">
+                <h2>Nuestras Redes</h2>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+        </div>
+
+
+    </footer>
 
 
 </body>

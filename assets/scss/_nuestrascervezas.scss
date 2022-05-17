@@ -1,10 +1,6 @@
-.main section h1{
-    padding: 10px;
-}
+
 
 .contenedor{
-    
-    
     display: flex;  
     flex-wrap:wrap;
     justify-content: center;
@@ -17,29 +13,24 @@
         text-align:map-get($tarjetas , alineacion ) ;
         img{
             width: 160px;   
-            } 
+            }
+            .tarjeta_titulo{
+                text-align: center;
+                margin-top: 10px;
+            }
+            .tarjeta_descripcion{
+                text-align:center;
+            }
+            .tarjeta_boton{
+                text-align: center;
+                margin-top: 10px ;
+                margin-bottom: 10px;
+                padding: 0.3rem 0.5rem;
+                border-radius: 5px;   
+            }     
+}    
 }
  
-     
-}
- 
-.tarjeta_titulo{
-    text-align: center;
-    margin-top: 10px;
-}
-.tarjeta_descripcion{
-    text-align:center;
-}
-.tarjeta_boton{
-    text-align: center;
-    margin-top: 10px ;
-    margin-bottom: 10px;
-    padding: 0.3rem 0.5rem;
-    border-radius: 5px;   
-}
-section h1{
-    text-align: center;
-}
 .formulario{
 
     text-align: center;

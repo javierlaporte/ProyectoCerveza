@@ -6,17 +6,15 @@
     "cabeza cabeza cabeza"
     "main main main"
     "footer footer footer"
-    ;    
+    ;
     header{
-        
-    grid-area: cabeza;
-        
+        grid-area: cabeza;
     }
     .main{
-
-        grid-area: main;          
+        grid-area: main;    
     }
     footer{
         grid-area: footer;
-    }
+
+    }    
 }
