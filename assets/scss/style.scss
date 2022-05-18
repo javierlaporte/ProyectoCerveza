@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Playfair+Display&display=swap');
+@import "_variables";
+@import "_generales";
+@import "_grid";
+@import "_header";
+@import "_nuestrascervezas";
+@import "_cursos";
+@import "_contactos";
+@import "_footer";
+@import "_media";
+
+
+
+
+
+.main{
+    background-image: url(../img/fabio-alves-_fLgxjACz5k-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 52px 0 2rem 0;
+    color: $colorletras;
+    /*animacion al titulo*/
+    h1{
+        animation-duration: 1s;
+        animation-name: efecto;
+        animation-iteration-count: infinite;
+        color: $colorletras;
+        text-align: center;
+        @keyframes efecto {
+            0%{
+                opacity: 0;
+                            }
+            100% {
+                opacity: 1;
+                            }
+                        }
+            /*fin animacion*/ 
+                }
+               
+    .main_section{
+        color: rgb(250, 250, 249);
+        font-size: larger;
+                }
+    p,button{
+        font-family: $fuentetitulos
+                }
+    h1,h3{
+        font-family: $fuentetitulos;
+                }
+    .color img{
+        padding-left: 10px;
+        padding-top: 5px;
+                }
+    .logo{
+        width: 80px;
+        height: 48px;
+                }
+}

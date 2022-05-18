@@ -1,263 +1,394 @@
-@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Playfair+Display&display=swap');
-
-/* fuente elegir titulos , texto 
-font-family: 'BIZ UDPMincho', serif; 
-font-family: 'Playfair Display', serif;
-*/
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Playfair+Display&display=swap");
+body {
+  top: 0;
+  margin: 0;
 }
 
-
-header{
-    top: 0; 
-    background: rgba(156, 153, 153, 0.65);  
+.main_section h1 {
+  padding: 10px;
+  text-align: center;
 }
 
-.navegador{
-    color: black;
-    list-style: none;
-    padding: 1;
-    margin: auto;
-    font-family: 'BIZ UDPMincho', serif;
-    text-align: center;
-}
-.navegador li a {
-    color: rgb(7, 6, 5);
-    text-decoration: none;
-    padding: 15px;
-    border: inset 2px;    
-}
-nav li a:hover { /*animacion al pasar mouse en nav*/
-    background-color: dimgray;
+.gridcontenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 50% auto;
+      grid-template-columns: 20% 50% auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "cabeza cabeza cabeza" "main main main" "footer footer footer";
 }
 
-.mains{
-
-    background-image: url(../img/cerveza-negra-stout-y-porter___ert_ia4f9_1256x620__1.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    padding: 52px 0 2rem 0; /*modificar para adaptacion*/
-    
-}
-.main_section{
-    padding: 2rem;
-}
-p,button{
-    font-family: 'Playfair Display', serif;
-}
-/*animacion al titulo*/
-h1{
-    animation-duration: 1s;
-    animation-name: efecto;
-    animation-iteration-count: infinite; 
-}
-@keyframes efecto {
-    0%{
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-/*fin animacion*/
-h1,h3{
-    font-family: 'BIZ UDPMincho', serif;   
-}
-h3{
-    font-family: 'BIZ UDPMincho', serif;  
-    color: bisque; 
-}
-.color img{
-    padding-left: 10px;
-    padding-top: 5px;
-}
-.logo{
-    width: 80px;
-    height: 48px;
+.gridcontenedor header {
+  grid-row: 1;
+  grid-column: 1;
+  grid-column: 3;
+  grid-area: cabeza;
 }
 
-
-/* PAGINA NUESTRASCERVEZAS */
-
-.main section h1{
-    padding: 10px;
+.gridcontenedor .main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: main;
 }
 
-.contenedor{
-    
-    max-width: 1200px;  
-    display: flex;  
-    flex-wrap:wrap;
-    justify-content: center;
-    margin: 50px;
+.gridcontenedor footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
 }
-.contenedor .tarjeta{   
-    width: 400px ;    
-    background-color:rgba(177, 161, 161, 0.264) ;
-    border: groove;
-    margin:20px;
-    text-align: center; 
-     
-}
-.contenedor .tarjeta img{
-        width: 160px;         
-}
-.tarjeta_titulo{
-    text-align: center;
-    margin-top: 10px;
-}
-.tarjeta_descripcion{
-    text-align:center;
-}
-.tarjeta_boton{
-    text-align: center;
-    margin-top: 10px ;
-    margin-bottom: 10px;
-    padding: 0.3rem 0.5rem;
-    border-radius: 5px;   
-}
-section h1{
-    text-align: center;
-}
-.formulario{
 
-    text-align: center;
-    color:antiquewhite;
-    font-size: 20px;
+header {
+  background-color: rgba(147, 144, 142, 0.883);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  border-radius: 3px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: cabeza;
 }
+
+header .navegador {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  font-family: 'BIZ UDPMincho', serif;
+  text-align: center;
+}
+
+header .navegador li {
+  display: inline-block;
+}
+
+header .navegador a {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+header .navegador a :hover {
+  /*animacion al pasar mouse en nav*/
+  background-color: #0b0707;
+}
+
+.contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px;
+}
+
+.contenedor .tarjeta {
+  width: 400px;
+  background-color: rgba(177, 161, 161, 0.264);
+  border: groove;
+  margin: 20p;
+  text-align: center;
+}
+
+.contenedor .tarjeta img {
+  width: 160px;
+}
+
+.contenedor .tarjeta .tarjeta_titulo {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contenedor .tarjeta .tarjeta_descripcion {
+  text-align: center;
+}
+
+.contenedor .tarjeta .tarjeta_boton {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+
+.formulario {
+  text-align: center;
+  color: antiquewhite;
+  font-size: 20px;
+}
+
 /* fin pagina nuestrascervezas */
-
-/* pagina contacto */
-.mains h1{
-    text-align: center;
-    padding-top: 10px;
-}
-.contacto{
-    margin: 2rem 0; /*modifique tenia auto*/
-    max-width: 1200px;    
-    display:flex;
-    justify-content: center;
-    flex-direction:row;  
-}
-.tarjetaform{
-    width: 250px ;   
-    overflow:visible;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          
-}
-.tarjetaform input, textarea{ /*para la tarjeta*/
-    padding: 0.5rem;
-    border-radius: 5px;
-    margin: 0.5rem 0;
-    width: 100%;     
-}
-.cursos h1{
-    margin-bottom: 80px;
-}
-/* fin pagina contacto*/
-
 /* pagina cursos*/
-
-.cursos{
-    display: flex;
-    flex-direction: column;    
-    align-items: center;
+.cursos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.cursos iframe{
-    width: 560px;
-    height: 360px; 
-}
 
+.cursos iframe {
+  width: 560px;
+  height: 360px;
+}
 
 /* inicio footer*/
+/* pagina contacto */
+.contacto {
+  margin: 2rem 0;
+  /*modifique tenia auto*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
 
-footer{
-    background-color: rgba(140, 140, 133, 0.554);
-    text-align: center;
-    color: rgb(2, 5, 6);
-    font-family: 'BIZ UDPMincho', serif;
-     
+.tarjetaform {
+  width: 250px;
+  overflow: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-footer div{
-        text-align: left;
-        padding-top: 5px;
-        padding: 10px ;       
+
+.tarjetaform input textarea {
+  /*para la tarjeta*/
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  width: 100%;
 }
-footer h3{
-    text-align: right;
-    padding-right: 20px;  
+
+/* fin pagina contacto*/
+footer {
+  background-color: rgba(147, 144, 142, 0.883);
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
 }
-footer h5{
-    padding-bottom: 5px;
+
+.contenedorfooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contenedorfooter .boxfooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+}
+
+.contenedorfooter a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.contenedorfooter h2 {
+  margin-bottom: 20px;
+}
+
+.boxfooter_redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxfooter_redes a {
+  text-decoration: none;
+  margin-top: 20px;
 }
 
 /*responsive index*/
-@media (max-width: 420px){
-    .gridcontenedor{
-        grid-template-columns:1fr 1fr ;
-        grid-template-rows:auto auto 100px;
-        grid-template-areas: 
-        "header header"
-        "main main"
-        "footer footer";
-                   }
-    .main{
-        height: auto;
-         }
-    header{
-        position: static;
-         }
-    .navegador li{
-        display: block;
-             }
-    .logo{
-        display: none;
-        }
-    
-    /*responsive nuestrascervezas*/
-    
-    .contenedor{
-        margin: 5px;
-    }                
-    .contenedor .tarjeta{   
-        width: 150px ;
-        height: auto;
-        overflow: hidden;        
-    }
-    .contenedor .tarjeta img{
-        width: 80px; 
-        }  
-    /*sobrenosotros*/
-
-    .main section p{
-        padding-left: 10px;
-        
-    }
-    /*cursos*/
-    .cursos iframe{
-        width: 300px;
-    }
-
+@media screen and (max-width: 480px) {
+  .gridcontenedor {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "cabeza cabeza" "main main" "footer footer";
+  }
+  .main {
+    height: auto;
+  }
+  header {
+    position: static;
+  }
+  header .navegador li {
+    display: block;
+  }
+  header .navegador .logo {
+    display: none;
+  }
+  .logo {
+    /*aplico en general porque esta en header y footer*/
+    display: none;
+  }
+  /*responsive nuestrascervezas*/
+  .contenedor {
+    margin: 5px;
+  }
+  .contenedor .tarjeta {
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+  }
+  .contenedor img {
+    width: 80px;
+  }
+  /*sobrenosotros*/
+  .main section p {
+    padding-left: 10px;
+  }
+  /*cursos*/
+  .cursos iframe {
+    width: 300px;
+  }
+  /*responsive footer*/
+  footer {
+    padding-top: 0;
+  }
+  footer .contenedorfooter {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  footer .boxfooter_redes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .boxfooter_redes a {
+    margin: 20px;
+  }
+  footer .boxfooter_redes i {
+    font-size: 40px;
+  }
+  footer .boxfooter_redes h2 {
+    display: none;
+  }
+  footer .boxfooter a {
+    display: none;
+  }
 }
 
+.main {
+  background-image: url(../img/fabio-alves-_fLgxjACz5k-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 52px 0 2rem 0;
+  color: aliceblue;
+  /*animacion al titulo*/
+}
 
-    
+.main h1 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: efecto;
+          animation-name: efecto;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  color: aliceblue;
+  text-align: center;
+  /*fin animacion*/
+}
 
+@-webkit-keyframes efecto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
+@keyframes efecto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
+.main .main_section {
+  color: #fafaf9;
+  font-size: larger;
+}
 
+.main p, .main button {
+  font-family: font-family "BIZ UDPMincho", serif;
+}
 
+.main h1, .main h3 {
+  font-family: font-family "BIZ UDPMincho", serif;
+}
 
+.main .color img {
+  padding-left: 10px;
+  padding-top: 5px;
+}
 
-
-    
-    
-
-
-
-
-
-    
+.main .logo {
+  width: 80px;
+  height: 48px;
+}
+/*# sourceMappingURL=style.css.map */

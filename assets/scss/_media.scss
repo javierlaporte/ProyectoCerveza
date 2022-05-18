@@ -1,0 +1,83 @@
+/*responsive index*/
+@media screen and (max-width: 480px){
+    .gridcontenedor{
+        grid-template-columns:1fr 1fr ;
+        grid-template-rows:auto auto auto;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "main main"
+        "footer footer";
+                   }
+    .main{
+        height: auto;
+         }
+    header{
+        position: static;
+    .navegador{
+        li{
+        display: block;    
+        }
+        .logo{
+            display: none;
+            }       
+        
+    }    
+         }
+    .logo{ /*aplico en general porque esta en header y footer*/
+        display: none;
+        }    
+    
+    /*responsive nuestrascervezas*/
+    
+    .contenedor{
+        margin: 5px;
+        .tarjeta{   
+            width: 150px ;
+            height: auto;
+            overflow: hidden;        
+        }
+        img{
+            width: 80px; 
+            }  
+    }                
+    /*sobrenosotros*/
+
+    .main section p{
+        padding-left: 10px;
+        
+    }
+    /*cursos*/
+    .cursos iframe{
+        width: 300px;
+    }
+
+    /*responsive footer*/
+    footer{
+        padding-top: 0;
+
+    .contenedorfooter{
+        justify-content: space-evenly;
+        }
+    .boxfooter_redes{
+        flex-direction: row;
+        a{
+            margin: 20px;
+            }  
+        i{
+            font-size: 40px;
+            }
+        h2{
+            display: none;
+            }  
+        }    
+    .boxfooter{
+        a {
+            display: none;
+            
+        }
+    } 
+       
+        }
+    
+       
+}
