@@ -10,31 +10,33 @@
                    }
     .main{
         height: auto;
+        .main_section{
+            margin: 2rem 0 ;
+
+        }
          }
     header{
         position: static;
     .navegador{
         li{
         display: block;    
-        }
-        .logo{
-            display: none;
-            }       
-        
+        }    
     }    
          }
-    .logo{ /*aplico en general porque esta en header y footer*/
-        display: none;
-        }    
+    
     
     /*responsive nuestrascervezas*/
     
     .contenedor{
         margin: 5px;
         .tarjeta{   
-            width: 150px ;
+            width: 100% ;
             height: auto;
-            overflow: hidden;        
+            overflow: hidden;
+            margin: 20px 0 ;
+        .tarjeta_descripcion{
+            padding: .5rem;
+        }        
         }
         img{
             width: 80px; 
@@ -56,13 +58,12 @@
         padding-top: 0;
 
     .contenedorfooter{
-        justify-content: space-evenly;
+        flex-direction: column;
         }
     .boxfooter_redes{
-        flex-direction: row;
-        a{
-            margin: 20px;
-            }  
+       margin: .5rem 0 ;
+       text-align: center;
+        
         i{
             font-size: 40px;
             }
@@ -71,10 +72,8 @@
             }  
         }    
     .boxfooter{
-        a {
-            display: none;
-            
-        }
+        margin: .5rem 0;
+       
     } 
        
         }
