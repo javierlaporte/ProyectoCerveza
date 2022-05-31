@@ -20,9 +20,9 @@ body {
 }
 
 .gridcontenedor header {
-  grid-row: 1;
-  grid-column: 1;
-  grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: cabeza;
 }
 
@@ -51,6 +51,7 @@ header {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: cabeza;
+  padding: 1.5rem;
 }
 
 header .navegador {
@@ -58,8 +59,12 @@ header .navegador {
   list-style: none;
   padding: 0;
   margin: auto;
-  font-family: 'BIZ UDPMincho', serif;
+  font-family: "BIZ UDPMincho", serif;
   text-align: center;
+}
+
+header .navegador ul {
+  text-align: end;
 }
 
 header .navegador li {
@@ -69,11 +74,11 @@ header .navegador li {
 header .navegador a {
   color: aliceblue;
   text-decoration: none;
-  padding: 15px;
+  padding: .5rem;
   display: block;
 }
 
-header .navegador a :hover {
+header .navegador a:hover {
   /*animacion al pasar mouse en nav*/
   background-color: #0b0707;
 }
@@ -94,7 +99,7 @@ header .navegador a :hover {
   width: 400px;
   background-color: rgba(177, 161, 161, 0.264);
   border: groove;
-  margin: 20p;
+  margin: 20px;
   text-align: center;
 }
 
@@ -316,6 +321,7 @@ footer {
   }
 }
 
+/*responsive*/
 .main {
   background-image: url(../img/fabio-alves-_fLgxjACz5k-unsplash.jpg);
   background-size: cover;
@@ -375,11 +381,11 @@ footer {
 }
 
 .main p, .main button {
-  font-family: font-family "BIZ UDPMincho", serif;
+  font-family: "BIZ UDPMincho", serif;
 }
 
 .main h1, .main h3 {
-  font-family: font-family "BIZ UDPMincho", serif;
+  font-family: "BIZ UDPMincho", serif;
 }
 
 .main .color img {
