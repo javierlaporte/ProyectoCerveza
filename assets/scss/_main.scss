@@ -33,12 +33,19 @@
         font-size: larger;
         background: linear-gradient(to right bottom, rgba(0,0,0,0.8),rgba(0,0,0,0.5) );
         padding: 1rem;
+        border-radius: 15px;
+        margin: 2rem;
                 }
     p,button{
-        font-family: $fuentetitulos
+        font-family: $fuentetitulos;
+        font-size: 1rem;
+        text-align: center;
                 }
     h1,h3{
         font-family: $fuentetitulos;
+    h2{
+        text-align: center;
+    }    
                 }
     .color img{
         padding-left: 10px;
