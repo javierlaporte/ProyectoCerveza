@@ -5,27 +5,39 @@ footer{
     .contenedorfooter{
         display: flex;
         justify-content: space-between;
+        padding: 1.5rem;
     
             .boxfooter{
                 display: flex;
                 flex-direction: column;
-                padding: 30px;
+                justify-content: space-evenly;
+                align-items: center;
             }
             a{
                 text-decoration: none;
                 color: $colorletras;
+                font-family: $fuentetitulos;
+                &:hover {
+                    color: #fda632;
+                }
+                
             }
             h2{
                 margin-bottom: 20px;
+                color: white;
             }
     }
             .boxfooter_redes{
             display: flex;
             flex-direction: column;
-            padding: 30px;
             align-items: center;
              a{
             text-decoration: none;
             margin-top: 20px;
+            text-align: center;
+            i{
+                font-size: 2rem;
+                padding: 0 0.8rem;    
+            }
             }
     }

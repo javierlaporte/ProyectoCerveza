@@ -9,6 +9,86 @@ body {
   text-align: center;
 }
 
+.main {
+  background-image: url(../img/fabio-alves-_fLgxjACz5k-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 52px 2rem 2rem 2rem;
+  color: aliceblue;
+  /*animacion al titulo*/
+}
+
+.main h1 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: efecto;
+          animation-name: efecto;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  color: aliceblue;
+  text-align: center;
+  /*fin animacion*/
+}
+
+@-webkit-keyframes efecto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes efecto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main .main_section {
+  color: #fafaf9;
+  font-size: larger;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+  padding: 1rem;
+}
+
+.main p, .main button {
+  font-family: "BIZ UDPMincho", serif;
+}
+
+.main h1, .main h3 {
+  font-family: "BIZ UDPMincho", serif;
+}
+
+.main .color img {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.main .logo {
+  width: 80px;
+  height: 48px;
+}
+
 .gridcontenedor {
   display: -ms-grid;
   display: grid;
@@ -80,7 +160,7 @@ header .navegador a {
 
 header .navegador a:hover {
   /*animacion al pasar mouse en nav*/
-  background-color: #0b0707;
+  color: #fda632;
 }
 
 .contenedor {
@@ -206,6 +286,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 1.5rem;
 }
 
 .contenedorfooter .boxfooter {
@@ -216,16 +297,27 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contenedorfooter a {
   text-decoration: none;
   color: aliceblue;
+  font-family: "BIZ UDPMincho", serif;
+}
+
+.contenedorfooter a:hover {
+  color: #fda632;
 }
 
 .contenedorfooter h2 {
   margin-bottom: 20px;
+  color: white;
 }
 
 .boxfooter_redes {
@@ -236,7 +328,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -245,6 +336,12 @@ footer {
 .boxfooter_redes a {
   text-decoration: none;
   margin-top: 20px;
+  text-align: center;
+}
+
+.boxfooter_redes a i {
+  font-size: 2rem;
+  padding: 0 0.8rem;
 }
 
 /*responsive index*/
@@ -322,79 +419,4 @@ footer {
 }
 
 /*responsive*/
-.main {
-  background-image: url(../img/fabio-alves-_fLgxjACz5k-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: main;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 52px 0 2rem 0;
-  color: aliceblue;
-  /*animacion al titulo*/
-}
-
-.main h1 {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-name: efecto;
-          animation-name: efecto;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  color: aliceblue;
-  text-align: center;
-  /*fin animacion*/
-}
-
-@-webkit-keyframes efecto {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes efecto {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.main .main_section {
-  color: #fafaf9;
-  font-size: larger;
-}
-
-.main p, .main button {
-  font-family: "BIZ UDPMincho", serif;
-}
-
-.main h1, .main h3 {
-  font-family: "BIZ UDPMincho", serif;
-}
-
-.main .color img {
-  padding-left: 10px;
-  padding-top: 5px;
-}
-
-.main .logo {
-  width: 80px;
-  height: 48px;
-}
 /*# sourceMappingURL=style.css.map */
