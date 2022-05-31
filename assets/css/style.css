@@ -256,7 +256,7 @@ header .navegador a:hover {
 }
 
 .tarjetaform {
-  width: 250px;
+  max-width: 400px;
   overflow: visible;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,12 +270,19 @@ header .navegador a:hover {
           align-items: center;
 }
 
-.tarjetaform input textarea {
+.tarjetaform input, .tarjetaform textarea {
   /*para la tarjeta*/
-  padding: 0.5rem;
-  border-radius: 5px;
-  margin: 0.5rem 0;
   width: 100%;
+  border-radius: 5px;
+  padding: .5rem;
+}
+
+.tarjetaform div {
+  margin: 1rem;
+}
+
+.tarjetaform div input {
+  margin: .5rem 0;
 }
 
 /* fin pagina contacto*/
