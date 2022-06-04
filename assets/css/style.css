@@ -10,7 +10,7 @@ body {
 }
 
 .main {
-  background-image: url(../img/fabio-alves-_fLgxjACz5k-unsplash.jpg);
+  background-image: url(../img/fondounocervezas.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -34,6 +34,8 @@ body {
 }
 
 .main h1 {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-name: efecto;
